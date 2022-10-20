@@ -4,7 +4,6 @@ import unicodedata  #пришлось добавить, иначе некото�
 
 with open('recipes.txt', 'r', encoding='utf-8') as file:
     cook_book = {}
-    item = 'yyyyy'
     for line in file:
         s = unicodedata.normalize("NFKD", line.strip()).split(
             ' | ')  #вкорячил костыль, ибо на реплите не читается файл норм
